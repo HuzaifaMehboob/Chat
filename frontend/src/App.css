@@ -1,0 +1,65 @@
+.frontpage{
+  width:100%;
+  height:100vh;
+  
+}
+.logoside{
+  width:35%;
+  height:50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* @media (min-width:1500px) 
+{
+.AuthPage{
+  width:30%;
+  height: 90%;
+  
+  
+}
+}
+@media (min-width:1200px) and (max-width:1499px)
+{
+.AuthPage{
+  width:30%;
+  height: 80%;
+  
+}
+}
+@media (min-width:1000px) and (max-width:1200px)
+{
+.AuthPage{
+  width:50%;
+  height: 70%;
+  
+}
+}
+@media (min-width:800px) and (max-width:999px)
+{
+.AuthPage{
+  width:60%;
+  height: 70%;
+  background-color: aqua;
+  
+}
+}
+@media (min-width:600px) and (max-width:799px)
+{
+.AuthPage{
+  width:70%;
+  height: 70%;
+  background-color: azure;
+  
+}
+}
+@media (min-width:300px) and (max-width:599px)
+{
+.AuthPage{
+  width:80%;
+  height: 70%;
+  background-color: azure;
+  
+}
+} */
