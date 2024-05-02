@@ -1,0 +1,12 @@
+.converdiv{
+    width: 100%;
+    height:83%;
+    padding-top:2%;
+    box-sizing: border-box;
+}
+.textsize{
+    width:100%;
+    height:fit-content;
+    margin-bottom: 1px;
+    
+}

@@ -1,0 +1,130 @@
+.leftsection{
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    box-sizing:border-box;
+}
+
+.leftinfo{
+    width:17%;
+    background-color: rgb(42, 42, 65);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+
+.userpic{
+    width: 70%;
+    height:7%;
+    object-fit: contain;
+    border-radius: 50px;
+    background-color: aqua;
+}
+
+.userpic img{
+    border-radius: 50px;
+}
+
+.leftinfo button{
+    margin-top:50%;
+    width:100%;
+    height:7%;
+    background-color: transparent;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    width:60%;
+    height:60%;
+    color:white
+}
+.contacts{
+    /* background-color:rgb(67, 67, 96); */
+    background-color: rgb(223, 224, 224);
+    width:83%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:5%;
+    box-sizing: border-box;
+}
+.searchbar{
+    display:flex;
+    background-color: white;
+    width: 90%;
+    height:6%;
+    justify-content: space-between;
+    border-radius:10px;
+    margin-bottom:7%;
+}
+
+.herocomp{
+    width:90%;
+    height:6%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(42, 42, 65);
+    margin-bottom: 5%;
+}
+.herocomp button{
+    width:5%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color:transparent;
+    border:none;
+}
+.heroicon{
+    width:40%;
+    height:80%;
+    color:rgb(42, 42, 65)
+}
+.choices{
+    width: 100%;
+    height: 7%;
+    background-color: transparent;
+    margin-bottom:5%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.choices button{
+    width:35%;
+    height:100%;
+    background-color: rgb(160, 160, 164);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(80, 80, 97);
+    border:none;
+    font-weight:bold;
+}
+
+.peoplechat{
+    width:100%;
+    height:80%;
+    overflow-y: hidden ;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.singleperson{
+    width: 100%;
+    height:15%;
+    margin-bottom:2%;
+}

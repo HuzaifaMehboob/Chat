@@ -1,0 +1,63 @@
+.footer{
+    width: 100%;
+    height:6%;
+    border-top:3px solid rgb(131, 131, 141);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+    box-sizing: border-box;
+}
+.textfoot{
+    
+    width:90%;
+    height: 90%;
+    background-color: rgb(165, 163, 163);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.emojiselec{
+    width:8%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    border:none;
+}
+
+.emojiicons{
+    width:60%;
+    height:70%;
+    color: gray;
+
+}
+.textfoot input{
+    width:90%;
+    height:100%;
+    background-color:transparent;
+    border:none;
+    border-radius:7px;
+    padding-left:2%;
+    box-sizing:border-box;
+    color:rgb(238, 235, 235);
+    font-weight: bold;
+}
+.subicon{
+    width: 70%;
+    height: 70%;
+    color: blue;
+}
+
+.subbut{
+    width: 5%;
+    height:90%;
+    border-radius: 10px;
+    border: 2px solid rgb(206, 216, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
