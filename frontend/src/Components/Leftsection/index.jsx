@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect ,useState} from 'react'
 import './index.css'
 import person from '../../assets/person.jpg'
 import { IoChatbubbleEllipsesOutline, IoEllipsisVertical }  from "react-icons/io5";
@@ -12,9 +12,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import {clearToken} from '../../redux/Slices/authSlice'
 import { clearUser } from '../../redux/Slices/User';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios'
 function Leftsection() {
+    
+    const getToken = useSelector(state=>state.authUser.token)
     const pic = useSelector(state=>state.user.pic)
+    const [data,setData]=useState()
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const DeleteToken = ()=>{
@@ -22,6 +25,14 @@ function Leftsection() {
         dispatch(clearUser())
         navigate('/Login')
     }
+
+    useEffect(()=>{
+        axios.get('http://localhost:3000/chats/all',  {
+            headers: { Authorization: `Bearer ${getToken}` }
+    }).then((res)=>
+    {console.log(res.data) 
+    setData(res.data)}
+    )},[])
   return (
     <div className='leftsection'>
         <div className='leftinfo'>
@@ -34,7 +45,12 @@ function Leftsection() {
         <div className='contacts'>
             <div className='herocomp'>
                 <h2>Message</h2>
-                <button><FaEllipsisVertical className='heroicon'/></button>
+                <div class="dropdown" >
+                <button className='heroicon'><FaEllipsisVertical style={{width:'30%',height:'90%'}}/></button>
+                <div class="dropdown-content">
+                <a href="#">Add Contact</a>
+                </div>
+                </div>
             </div>
             <div className='choices'>
                 <button>All Chats</button>
@@ -44,9 +60,8 @@ function Leftsection() {
             <div className='searchbar'>
                 <Searchbar/>
             </div>
-
             <div className='peoplechat'>
-               { Array(10).fill().map((ele,index)=>(
+               {data?.map((ele,index)=>(
                 <div className='singleperson' key={index}>
                     <Message/>
                 </div>))

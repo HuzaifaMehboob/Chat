@@ -6,5 +6,4 @@ const router = express.Router()
 router.post('/SignUp',registerUser)
 router.post('/Login',authUser)
 router.route('/info').get(Authmmiddleware,getUser)
-
 module.exports = router
