@@ -10,8 +10,8 @@ const Text = (props) => {
         </button>
         <div className='textcover'>
           <div className={props.myObject.pname}>
-            Hi my name is Huzaifa and i want to talk to you about something and that is very important so i request you to kindly hear me out!!netur, fugit  nulla voluptate est. Alias!
-          </div>
+            Lorem ipsum dolor sit amet consectetur adSipisicing elit. Quibusdam earum, ipsum dignissimos laborum aperiam quis saepe exercitationem omnis molestiae obcaecati architecto quo ratione.
+            </div>
         </div>
        
         
